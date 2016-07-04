@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A56FA431D2AD3F40078EBDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A56FA421D2AD3F40078EBDB /* GoogleService-Info.plist */; };
 		3A88C3AB1D2AD0D70017888B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88C3AA1D2AD0D70017888B /* AppDelegate.swift */; };
 		3A88C3AD1D2AD0D70017888B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88C3AC1D2AD0D70017888B /* ViewController.swift */; };
 		3A88C3B01D2AD0D70017888B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A88C3AE1D2AD0D70017888B /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		3A88C3B51D2AD0D70017888B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A88C3B31D2AD0D70017888B /* LaunchScreen.storyboard */; };
 		3A88C3C01D2AD0D70017888B /* Pomodoro_From_TasksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88C3BF1D2AD0D70017888B /* Pomodoro_From_TasksTests.swift */; };
 		3A88C3CB1D2AD0D70017888B /* Pomodoro_From_TasksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88C3CA1D2AD0D70017888B /* Pomodoro_From_TasksUITests.swift */; };
+		D2A8C19B93FAE9A7156407BB /* Pods_Pomodoro_From_Tasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7540C830EE323E368DE0410 /* Pods_Pomodoro_From_Tasks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A56FA421D2AD3F40078EBDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A88C3A71D2AD0D70017888B /* Pomodoro-From-Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro-From-Tasks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A88C3AA1D2AD0D70017888B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A88C3AC1D2AD0D70017888B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		3A88C3C61D2AD0D70017888B /* Pomodoro-From-TasksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pomodoro-From-TasksUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A88C3CA1D2AD0D70017888B /* Pomodoro_From_TasksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pomodoro_From_TasksUITests.swift; sourceTree = "<group>"; };
 		3A88C3CC1D2AD0D70017888B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4395CD518B00306B243287F4 /* Pods-Pomodoro-From-Tasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodoro-From-Tasks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pomodoro-From-Tasks/Pods-Pomodoro-From-Tasks.release.xcconfig"; sourceTree = "<group>"; };
+		634E2EE458157866ECD241F9 /* Pods-Pomodoro-From-Tasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodoro-From-Tasks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pomodoro-From-Tasks/Pods-Pomodoro-From-Tasks.debug.xcconfig"; sourceTree = "<group>"; };
+		C7540C830EE323E368DE0410 /* Pods_Pomodoro_From_Tasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomodoro_From_Tasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A8C19B93FAE9A7156407BB /* Pods_Pomodoro_From_Tasks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,8 @@
 				3A88C3BE1D2AD0D70017888B /* Pomodoro-From-TasksTests */,
 				3A88C3C91D2AD0D70017888B /* Pomodoro-From-TasksUITests */,
 				3A88C3A81D2AD0D70017888B /* Products */,
+				91DA40B86D3835A9FBBD4328 /* Pods */,
+				4C05E3B4B7CAA9C34B364507 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +112,7 @@
 				3A88C3B11D2AD0D70017888B /* Assets.xcassets */,
 				3A88C3B31D2AD0D70017888B /* LaunchScreen.storyboard */,
 				3A88C3B61D2AD0D70017888B /* Info.plist */,
+				3A56FA421D2AD3F40078EBDB /* GoogleService-Info.plist */,
 			);
 			path = "Pomodoro-From-Tasks";
 			sourceTree = "<group>";
@@ -125,6 +135,23 @@
 			path = "Pomodoro-From-TasksUITests";
 			sourceTree = "<group>";
 		};
+		4C05E3B4B7CAA9C34B364507 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7540C830EE323E368DE0410 /* Pods_Pomodoro_From_Tasks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91DA40B86D3835A9FBBD4328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				634E2EE458157866ECD241F9 /* Pods-Pomodoro-From-Tasks.debug.xcconfig */,
+				4395CD518B00306B243287F4 /* Pods-Pomodoro-From-Tasks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A88C3CF1D2AD0D70017888B /* Build configuration list for PBXNativeTarget "Pomodoro-From-Tasks" */;
 			buildPhases = (
+				D7832190B9C7886D7B4C1EA9 /* Check Pods Manifest.lock */,
 				3A88C3A31D2AD0D70017888B /* Sources */,
 				3A88C3A41D2AD0D70017888B /* Frameworks */,
 				3A88C3A51D2AD0D70017888B /* Resources */,
+				C5A20E7F1B88B4A5C86A5342 /* Embed Pods Frameworks */,
+				85A8513B9A07A20C803A268B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A88C3B51D2AD0D70017888B /* LaunchScreen.storyboard in Resources */,
+				3A56FA431D2AD3F40078EBDB /* GoogleService-Info.plist in Resources */,
 				3A88C3B21D2AD0D70017888B /* Assets.xcassets in Resources */,
 				3A88C3B01D2AD0D70017888B /* Main.storyboard in Resources */,
 			);
@@ -259,6 +290,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85A8513B9A07A20C803A268B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pomodoro-From-Tasks/Pods-Pomodoro-From-Tasks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A20E7F1B88B4A5C86A5342 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pomodoro-From-Tasks/Pods-Pomodoro-From-Tasks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7832190B9C7886D7B4C1EA9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A88C3A31D2AD0D70017888B /* Sources */ = {
@@ -410,6 +489,7 @@
 		};
 		3A88C3D01D2AD0D70017888B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634E2EE458157866ECD241F9 /* Pods-Pomodoro-From-Tasks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Pomodoro-From-Tasks/Info.plist";
@@ -422,6 +502,7 @@
 		};
 		3A88C3D11D2AD0D70017888B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4395CD518B00306B243287F4 /* Pods-Pomodoro-From-Tasks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Pomodoro-From-Tasks/Info.plist";
@@ -501,6 +582,7 @@
 				3A88C3D11D2AD0D70017888B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A88C3D21D2AD0D70017888B /* Build configuration list for PBXNativeTarget "Pomodoro-From-TasksTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +591,7 @@
 				3A88C3D41D2AD0D70017888B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A88C3D51D2AD0D70017888B /* Build configuration list for PBXNativeTarget "Pomodoro-From-TasksUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +600,7 @@
 				3A88C3D71D2AD0D70017888B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
