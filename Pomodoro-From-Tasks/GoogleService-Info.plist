@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>284609037374-vmtvl67g3vasl6l2ujp21lm72hq7ib37.apps.googleusercontent.com</string>
+	<string>1064281722295-og57g20pg4effpcgnc08su8r0v5f2u0k.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.284609037374-vmtvl67g3vasl6l2ujp21lm72hq7ib37</string>
+	<string>com.googleusercontent.apps.1064281722295-og57g20pg4effpcgnc08su8r0v5f2u0k</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCSWYjJLKdMruPQZbrjIZguyiNslJRLYXY</string>
+	<string>AIzaSyDu6IU2-QKRhaTI3p0i-OGJB_obvmrUCGU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>284609037374</string>
+	<string>1064281722295</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>uk.co.drewwestcott.Pomodoro-From-Tasks</string>
+	<string>uk.co.drewwestcott.Pomodoro-From-Reminders</string>
 	<key>PROJECT_ID</key>
-	<string>pomodoro-from-tasks</string>
+	<string>pomodoro-from-reminders</string>
 	<key>STORAGE_BUCKET</key>
-	<string>pomodoro-from-tasks.appspot.com</string>
+	<string>pomodoro-from-reminders.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:284609037374:ios:28a64bd1c52db046</string>
+	<string>1:1064281722295:ios:ee2422b8667d49d4</string>
 	<key>DATABASE_URL</key>
-	<string>https://pomodoro-from-tasks.firebaseio.com</string>
+	<string>https://pomodoro-from-reminders.firebaseio.com</string>
 </dict>
 </plist>

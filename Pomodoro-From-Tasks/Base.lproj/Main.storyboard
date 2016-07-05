@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSans-Bold.ttf">
+            <string>NotoSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pomodoro_From_Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +26,112 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9R-WE-gUw">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jJP-4t-jF7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Login / Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-ml-aeN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="E5X-vj-LPf"/>
+                                    <constraint firstAttribute="height" constant="21" id="a8i-TG-2s5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2r8-cv-Tnx" customClass="MaterialTextField" customModule="Pomodoro_From_Tasks" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="w20-A0-PFw"/>
+                                </constraints>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BgL-1R-uFw" customClass="MaterialTextField" customModule="Pomodoro_From_Tasks" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="KKe-Zn-IpG"/>
+                                </constraints>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tU-z4-0lY" customClass="MaterialButton" customModule="Pomodoro_From_Tasks" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="XLx-Lx-mI0"/>
+                                    <constraint firstAttribute="height" constant="33" id="sMZ-b9-5Lp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="15"/>
+                                <state key="normal" title="LOGIN / SIGNUP">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="attemptLoginWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nir-Ox-vzg"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRx-Zv-kTu" userLabel="NeedPermission">
+                                <frame key="frameInset" minX="47" minY="99" width="280" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="We need permission to access your calendar and reminders in order to check which tasks you want to Focus on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxZ-Ti-8sk">
+                                        <frame key="frameInset" minX="15" minY="22" width="250" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="1Du-bU-VoD"/>
+                                            <constraint firstAttribute="height" constant="100" id="jLg-NV-mnA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="19"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCf-VY-GYO">
+                                        <frame key="frameInset" minX="72" minY="162" width="136" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="136" id="uUk-Cc-nV2"/>
+                                            <constraint firstAttribute="height" constant="30" id="wJZ-tR-02b"/>
+                                        </constraints>
+                                        <state key="normal" title="Go to Settings">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fxZ-Ti-8sk" firstAttribute="top" secondItem="LRx-Zv-kTu" secondAttribute="top" constant="22" id="UwG-FO-sJE"/>
+                                    <constraint firstAttribute="bottom" secondItem="eCf-VY-GYO" secondAttribute="bottom" constant="8" id="bhx-0d-fP5"/>
+                                    <constraint firstItem="fxZ-Ti-8sk" firstAttribute="centerX" secondItem="LRx-Zv-kTu" secondAttribute="centerX" id="gx5-Rb-cic"/>
+                                    <constraint firstItem="eCf-VY-GYO" firstAttribute="centerX" secondItem="LRx-Zv-kTu" secondAttribute="centerX" id="kgf-mP-wuD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2tU-z4-0lY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="2ty-OL-Xgy"/>
+                            <constraint firstItem="LRx-Zv-kTu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7D6-wp-q3j"/>
+                            <constraint firstItem="z9R-WE-gUw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9C5-7a-M1G"/>
+                            <constraint firstItem="2r8-cv-Tnx" firstAttribute="leading" secondItem="gqr-ml-aeN" secondAttribute="leading" id="I45-R5-yaW"/>
+                            <constraint firstItem="z9R-WE-gUw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Iuw-nJ-P04"/>
+                            <constraint firstItem="2tU-z4-0lY" firstAttribute="top" secondItem="BgL-1R-uFw" secondAttribute="bottom" constant="20" id="OkG-i6-h4k"/>
+                            <constraint firstItem="2r8-cv-Tnx" firstAttribute="top" secondItem="gqr-ml-aeN" secondAttribute="bottom" constant="20" id="QWh-LQ-5fu"/>
+                            <constraint firstAttribute="trailing" secondItem="z9R-WE-gUw" secondAttribute="trailing" id="Xag-M9-dn2"/>
+                            <constraint firstItem="BgL-1R-uFw" firstAttribute="leading" secondItem="2r8-cv-Tnx" secondAttribute="leading" id="gqn-S1-swj"/>
+                            <constraint firstItem="2tU-z4-0lY" firstAttribute="leading" secondItem="BgL-1R-uFw" secondAttribute="leading" id="hmB-kT-vbJ"/>
+                            <constraint firstItem="LRx-Zv-kTu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kp3-1n-kyS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2tU-z4-0lY" secondAttribute="bottom" constant="28" id="oea-TS-KVU"/>
+                            <constraint firstItem="BgL-1R-uFw" firstAttribute="top" secondItem="2r8-cv-Tnx" secondAttribute="bottom" constant="20" id="yzT-Cj-FRe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginEmail" destination="2r8-cv-Tnx" id="3Bx-gu-RaO"/>
+                        <outlet property="loginPassword" destination="BgL-1R-uFw" id="NB2-fa-zRz"/>
+                        <outlet property="needPermissionView" destination="LRx-Zv-kTu" id="5ey-wt-k6S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-775.20000000000005" y="109.29535232383809"/>
         </scene>
     </scenes>
 </document>

@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A56FA431D2AD3F40078EBDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A56FA421D2AD3F40078EBDB /* GoogleService-Info.plist */; };
+		3A56FA461D2AD8F00078EBDB /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56FA451D2AD8F00078EBDB /* UIViewExtention.swift */; };
+		3A56FA481D2AE12A0078EBDB /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56FA471D2AE12A0078EBDB /* MaterialView.swift */; };
+		3A56FA4A1D2AE1340078EBDB /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56FA491D2AE1340078EBDB /* MaterialButton.swift */; };
+		3A56FA4D1D2AE1500078EBDB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56FA4B1D2AE1500078EBDB /* Constants.swift */; };
+		3A56FA4F1D2AE4FD0078EBDB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56FA4E1D2AE4FD0078EBDB /* DataService.swift */; };
+		3A8452911D2C2BE700BAF8D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A8452901D2C2BE700BAF8D5 /* GoogleService-Info.plist */; };
 		3A88C3AB1D2AD0D70017888B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88C3AA1D2AD0D70017888B /* AppDelegate.swift */; };
 		3A88C3AD1D2AD0D70017888B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88C3AC1D2AD0D70017888B /* ViewController.swift */; };
 		3A88C3B01D2AD0D70017888B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A88C3AE1D2AD0D70017888B /* Main.storyboard */; };
@@ -36,7 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A56FA421D2AD3F40078EBDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A56FA451D2AD8F00078EBDB /* UIViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		3A56FA471D2AE12A0078EBDB /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		3A56FA491D2AE1340078EBDB /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		3A56FA4B1D2AE1500078EBDB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3A56FA4E1D2AE4FD0078EBDB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3A84528F1D2C26DA00BAF8D5 /* Pomodoro-From-Tasks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Pomodoro-From-Tasks.entitlements"; sourceTree = "<group>"; };
+		3A8452901D2C2BE700BAF8D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A88C3A71D2AD0D70017888B /* Pomodoro-From-Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro-From-Tasks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A88C3AA1D2AD0D70017888B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A88C3AC1D2AD0D70017888B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +92,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A56FA441D2AD8BE0078EBDB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A56FA451D2AD8F00078EBDB /* UIViewExtention.swift */,
+				3A56FA471D2AE12A0078EBDB /* MaterialView.swift */,
+				3A56FA491D2AE1340078EBDB /* MaterialButton.swift */,
+				3A88C3AE1D2AD0D70017888B /* Main.storyboard */,
+				3A88C3B31D2AD0D70017888B /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3A56FA4C1D2AE1500078EBDB /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3A56FA4B1D2AE1500078EBDB /* Constants.swift */,
+			);
+			name = Util;
+			path = "../../Firebase Social App/social-showcase/social-showcase";
+			sourceTree = "<group>";
+		};
+		3A56FA501D2AE5040078EBDB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A56FA4E1D2AE4FD0078EBDB /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		3A56FA511D2AE6C70078EBDB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A88C3AC1D2AD0D70017888B /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		3A88C39E1D2AD0D70017888B = {
 			isa = PBXGroup;
 			children = (
@@ -106,13 +154,15 @@
 		3A88C3A91D2AD0D70017888B /* Pomodoro-From-Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				3A84528F1D2C26DA00BAF8D5 /* Pomodoro-From-Tasks.entitlements */,
+				3A56FA511D2AE6C70078EBDB /* Controller */,
+				3A56FA501D2AE5040078EBDB /* Services */,
+				3A56FA4C1D2AE1500078EBDB /* Util */,
+				3A56FA441D2AD8BE0078EBDB /* View */,
 				3A88C3AA1D2AD0D70017888B /* AppDelegate.swift */,
-				3A88C3AC1D2AD0D70017888B /* ViewController.swift */,
-				3A88C3AE1D2AD0D70017888B /* Main.storyboard */,
 				3A88C3B11D2AD0D70017888B /* Assets.xcassets */,
-				3A88C3B31D2AD0D70017888B /* LaunchScreen.storyboard */,
 				3A88C3B61D2AD0D70017888B /* Info.plist */,
-				3A56FA421D2AD3F40078EBDB /* GoogleService-Info.plist */,
+				3A8452901D2C2BE700BAF8D5 /* GoogleService-Info.plist */,
 			);
 			path = "Pomodoro-From-Tasks";
 			sourceTree = "<group>";
@@ -223,9 +273,14 @@
 				TargetAttributes = {
 					3A88C3A61D2AD0D70017888B = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5AZ7M68G8R;
-						DevelopmentTeamName = "Drew Westcott (Personal Team)";
+						DevelopmentTeam = 64798CH77E;
+						DevelopmentTeamName = "Drew Westcott";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					3A88C3BA1D2AD0D70017888B = {
 						CreatedOnToolsVersion = 8.0;
@@ -269,8 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A88C3B51D2AD0D70017888B /* LaunchScreen.storyboard in Resources */,
-				3A56FA431D2AD3F40078EBDB /* GoogleService-Info.plist in Resources */,
 				3A88C3B21D2AD0D70017888B /* Assets.xcassets in Resources */,
+				3A8452911D2C2BE700BAF8D5 /* GoogleService-Info.plist in Resources */,
 				3A88C3B01D2AD0D70017888B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,8 +399,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A56FA461D2AD8F00078EBDB /* UIViewExtention.swift in Sources */,
+				3A56FA4F1D2AE4FD0078EBDB /* DataService.swift in Sources */,
 				3A88C3AD1D2AD0D70017888B /* ViewController.swift in Sources */,
 				3A88C3AB1D2AD0D70017888B /* AppDelegate.swift in Sources */,
+				3A56FA481D2AE12A0078EBDB /* MaterialView.swift in Sources */,
+				3A56FA4A1D2AE1340078EBDB /* MaterialButton.swift in Sources */,
+				3A56FA4D1D2AE1500078EBDB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +479,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -438,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -466,6 +527,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -479,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -492,9 +554,12 @@
 			baseConfigurationReference = 634E2EE458157866ECD241F9 /* Pods-Pomodoro-From-Tasks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pomodoro-From-Tasks/Pomodoro-From-Tasks.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Pomodoro-From-Tasks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.drewwestcott.Pomodoro-From-Tasks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.drewwestcott.Pomodoro-From-Reminders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -505,9 +570,12 @@
 			baseConfigurationReference = 4395CD518B00306B243287F4 /* Pods-Pomodoro-From-Tasks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pomodoro-From-Tasks/Pomodoro-From-Tasks.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Pomodoro-From-Tasks/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.drewwestcott.Pomodoro-From-Tasks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.drewwestcott.Pomodoro-From-Reminders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
