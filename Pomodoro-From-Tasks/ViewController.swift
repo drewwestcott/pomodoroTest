@@ -70,7 +70,7 @@ class ViewController: UIViewController {
                                             } else {
                                                 print("DW:Signed in")
                                                 UserDefaults.standard.setValue(uid, forKey: KEY_UID)
-                                                self.performSegue(withIdentifier: SEGUE_LOGGED_IN, sender: nil)
+                                                self.performSegue(withIdentifier: SEGUE_POMODORO, sender: nil)
                                             }
                                         })
                                     }
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
                             } else {
                                 print("DW:Signed in")
                                 UserDefaults.standard.setValue(uid, forKey: KEY_UID)
-                                self.performSegue(withIdentifier: SEGUE_LOGGED_IN, sender: nil)
+                                self.performSegue(withIdentifier: SEGUE_POMODORO, sender: nil)
                             }
                         })
                     }

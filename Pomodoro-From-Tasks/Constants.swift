@@ -16,6 +16,7 @@ let KEY_UID = "uid"
 //Segues
 let SEGUE_LOGGED_IN = "timersSegue"
 let SEGUE_AUTHORISE = "loginSegue"
+let SEGUE_POMODORO = "showPomodoro"
 
 //Status Codes
 let STATUS_ACCOUNT_INVALID = 17008

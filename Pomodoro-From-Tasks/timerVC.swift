@@ -108,6 +108,34 @@ class timerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: SEGUE_POMODORO, sender: nil)
+    }
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: IndexPath) -> Bool {
+        // the cells you would like the actions to appear needs to be editable
+        return true
+    }
+        
+    func tableView(_ tableView: UITableView, editActionsForRowAtIndexPath indexPath: IndexPath) -> [AnyObject]? {
+        let more = UITableViewRowAction(style: .normal, title: "More") { action, index in
+            print("more button tapped")
+        }
+        more.backgroundColor = UIColor.lightGray()
+        
+        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { action, index in
+            print("favorite button tapped")
+        }
+        favorite.backgroundColor = UIColor.orange()
+        
+        let share = UITableViewRowAction(style: .normal, title: "Share") { action, index in
+            print("share button tapped")
+        }
+        share.backgroundColor = UIColor.blue()
+        
+        return [share, favorite, more]
+    }
+
     func updateUI() {
         timerTableView.reloadData()
     }
