@@ -16,6 +16,7 @@ class MaterialView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.borderWidth = 1.0
+        layer.borderColor = UIColor.darkGray().cgColor
     }
 
 }

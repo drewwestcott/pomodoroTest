@@ -90,7 +90,7 @@ class timerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         })
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
@@ -110,6 +110,11 @@ class timerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func updateUI() {
         timerTableView.reloadData()
+    }
+    
+    @IBAction func loginButtonPressed(sender: UIButton!) {
+        UserDefaults.standard.removeObject(forKey: KEY_UID)
+        performSegue(withIdentifier: SEGUE_AUTHORISE, sender: nil)
     }
 
 }
